@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     function showPhotos() {
         
-        const slides = $('.photo img');
+        const slides = $('#instafeed a');
         let i;
         //скрываем все фото
         for (i = 0; i < slides.length; i++) {
