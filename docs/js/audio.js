@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     const audio = $('#audioTrack')[0];
-
+    const moove = 0;
     const playBtn = $('#audio-play');
     const pauseBtn = $('#audio-pause');
     const audioCtrl = $('[data-type="audio-control"]');
@@ -12,7 +12,7 @@ $(document).ready(function(){
     function initAudioPlayer() {
         playBtn.parent().show();
         audio.loop = true;
-        
+
 
         audioCtrl.click(function() {
             if (audio.paused) {
