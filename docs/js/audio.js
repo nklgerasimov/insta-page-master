@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     const playBtn = $('#audio-play');
     const pauseBtn = $('audio-pause');
-    const audioCtrl = $('[data-type="audio-control"]')
+    const audioCtrl = $('[data-type="audio-control"]');
 
     initAudioPlayer();
 
