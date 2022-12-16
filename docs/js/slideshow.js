@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     function showPhotos() {
         
-        const slides = $('#instafeed a');
+        const slides = $('.photo img');
         let i;
         //скрываем все фото
         for (i = 0; i < slides.length; i++) {
@@ -18,7 +18,7 @@ $(document).ready(function () {
         };
         $(slides[slideIndex - 1]).show();
         //задержка в 200 мс перед каждой фото
-        setTimeout(showPhotos, 200);
+        setTimeout(showPhotos, 1000);
         
     }
 })
