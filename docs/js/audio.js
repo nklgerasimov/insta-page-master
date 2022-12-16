@@ -12,6 +12,7 @@ $(document).ready(function(){
     function initAudioPlayer() {
         playBtn.parent().show();
         audio.loop = true;
+        
 
         audioCtrl.click(function() {
             if (audio.paused) {
