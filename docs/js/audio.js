@@ -3,7 +3,7 @@ $(document).ready(function(){
     const audio = $('#audioTrack')[0];
 
     const playBtn = $('#audio-play');
-    const pauseBtn = $('audio-pause');
+    const pauseBtn = $('#audio-pause');
     const audioCtrl = $('[data-type="audio-control"]');
 
     initAudioPlayer();
@@ -15,12 +15,13 @@ $(document).ready(function(){
 
         audioCtrl.click(function() {
             if (audio.paused) {
-                // audio.play();
-                playBtn.parent().hide();
+                audio.play();
                 pauseBtn.parent().show();
+                playBtn.parent().hide();
             } else {
-                audio.paused();
+                audio.pause();
                 playBtn.parent().show();
+                pauseBtn.parent().hide();
             }
         })  
     }
